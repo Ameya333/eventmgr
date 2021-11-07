@@ -1,0 +1,23 @@
+.delete {
+	box-shadow:inset 0px 34px 0px -15px #366b73;
+	background:linear-gradient(to bottom, #366b73 5%, #68a4ad 100%);
+	background-color:#366b73;
+	border:1px solid #29668f;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:9px 23px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #3d768a;
+}
+.delete:hover {
+	background:linear-gradient(to bottom, #68a4ad 5%, #366b73 100%);
+	background-color:#68a4ad;
+}
+.delete:active {
+	position:relative;
+	top:1px;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <h1>Budget Calculator</h1>
+    <br><br>
+
+    <form action="{{ url_for("budget")}}", method="post">
+
+        <label for= "expname" >Name of expense:</label>
+        <input type="text" id="expname" name="expname" required><br><br>
+
+        <label for= "expense" >Cost of Expense</label>
+        <input type="number" id="expense" name="expense" required><br><br>
+
+        <input class="move" type="submit" value="Submit" >
+    </form>
+    <br><br><br>
+</body>
+
+<table class="table">
+    <tr>
+        <th style="padding-left: 5em; padding-right: 5em; text-align: center">expense_name</th>
+        <th style="padding-left: 5em; padding-right: 5em; text-align: center">price</th>
+    </tr>
+    <tr>
+        <td style="padding-left: 5em; padding-right: 5em; text-align: center; vertical-align: top">food</td>
+        <td style="padding-left: 5em; padding-right: 5em; text-align: center; vertical-align: top">2003</td>
+    </tr>
+    <tr>
+        <td style="padding-left: 5em; padding-right: 5em; text-align: center; vertical-align: top">salsa</td>
+        <td style="padding-left: 5em; padding-right: 5em; text-align: center; vertical-align: top">25</td>
+    </tr>
+</table>
+     <style> 
+     body{
+        background-color: #D1ECF7;
+        text-align: center;           
+        font-family: Gill Sans, serif;
+       }
+     input {   
+                 width: 50%;   
+                 padding: 12px 20px;   
+                 margin: 8px 0;   
+                 box-sizing: border-box;   
+                 border: none;   
+                 border-bottom: 2px solid black;   
+                 background-color: #D1ECF7; 
+                 font-size: 20px;  
+             }   
+     }
+      .table{
+           font-family: Gill Sans, serif;       
+                
+      }     
+      th{     
+            font-size: 20px;     
+            padding-bottom: 1.5em;     
+      }     
+      td{     
+            font-size: 18px;     
+            padding-bottom: 0.8em;     
+      }     
+        .move {     
+                    box-shadow:inset 0px 34px 0px -15px #366b73;     
+                    background:linear-gradient(to bottom, #366b73 5%, #68a4ad 100%);     
+                    background-color:#366b73;     
+                    border: none;     
+                    display:inline-block;     
+                    cursor:pointer;     
+                    color:#ffffff;     
+                    font-family:Arial;     
+                    font-size:15px;     
+                    font-weight:bold;     
+                    padding:9px 23px;     
+                    text-decoration:none;     
+                    text-shadow:0px -1px 0px #3d768a;     
+                    width:8%;     
+                }     
+                .move:hover {  
+                    background:linear-gradient(to bottom, #68a4ad 5%, #366b73 100%);  
+                    background-color:#68a4ad;  
+                }  
+                .move:active {  
+                    position:relative;  
+                    top:1px;  
+                }  
+             </style><br><br><h3>You are above the budget</h3>
